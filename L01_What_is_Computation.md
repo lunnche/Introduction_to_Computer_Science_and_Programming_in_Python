@@ -190,3 +190,59 @@ float
 
 看到p1 34：37
 
+## SIMPLE OPERATIONS  
+* parentheses used to tell Python to do these operations first  
+* <font color="red">operator precedence</font> without parentheses
+    * \**
+    * \*
+    * /
+    * \+ and - executed left to right,as appear in expression  
+
+
+## BINGDING VARIABLES AND VALUES  
+* equal sign is an <font color="red">assignment</font> of a value to a variable name
+```
+pi = 3.14159
+pi_approx = 22/7
+```
+
+* value stored in computer memory  
+* an assignment binds name to value  
+* retrieve value associated with name or variable by invoking the name,by typing pi  
+
+## ABSTRACTING EXPRESSIONS  
+* why <font color="red">give names</font> to values of expressions?  
+* to <font color="red">reuse names</font> instead of values
+* easier to change code later  
+```
+pi = 3.14159
+radius = 2.2
+area = pi*(radius**2)
+```
+
+## PROGRAMMING vs MATH  
+* in programming,you do not "solve for x"
+```
+pi = 3.14159  
+radius = 2.2
+# area of circle
+area = pi*(radius**2)
+radius = radius + 1
+```
+
+in math you can have a lot of things to the left and a lot of things to the right of the equal sign  
+there's only one thing to the left of the equal sign and that is gonna be a variable   
+
+an equal signstands for an assignment
+
+## CHANGING BINGDINGS
+* can re-bind variable names using new assignment statements  
+* previous value may still stored in memory but lost the handle for it 
+* value for area does not change until you tell the computer to do the calculation again  
+
+![image-20220127141841553](https://raw.githubusercontent.com/lunnche/picgo-image/main/image-20220127141841553.png)
+
+radius先赋值2.2，再赋值3.2，2.2失去handle，仍存在于内存中，可能之后会被garbage collector in Python
+收集起来。garbage collector 会检索这些丢失的值。    
+
+完结撒花🌺🌹
