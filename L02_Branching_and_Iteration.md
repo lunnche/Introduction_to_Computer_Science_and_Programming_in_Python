@@ -91,6 +91,8 @@ a and b -> True if both are True
 a or b -> True if either or both are True
 ```
 
+字符串比大小，就死看谁在字母表上排在后面，似乎是这样。不确定
+
 ![image-20220203113803944](https://raw.githubusercontent.com/lunnche/picgo-image/main/image-20220203113803944.png)
 
 ## CONTROL FLOW - BRANCHING
@@ -99,6 +101,10 @@ a or b -> True if either or both are True
 
 * <condition> has a value True of False
 * evaluate expressions in that block if <condition> is True  
+
+注意：python里是 elif  javascript 里是 else if
+
+用elif的情况下，即使多个condition为真，也只执行第一个为真的condition
 
 ## INDENTATION
 * matters in Python
@@ -140,7 +146,10 @@ for n in range(5):
 
 ```
 
+如果陷入无限循环，可以按control+c 或command+c 来结束
+
 ## CONTROL FLOW:for LOOPS
+
 * each time through the loop, <variable> takes a value
 * first time, <variable> starts at the smallest value
 * next time, <variable> gets the prev value +1
@@ -170,3 +179,5 @@ print(mysum)
 ![image-20220203144227436](https://raw.githubusercontent.com/lunnche/picgo-image/main/image-20220203144227436.png)
 
 ppt看完了，课还没听完，去听课，再补充
+
+看到34：15了
