@@ -148,6 +148,15 @@ for n in range(5):
 
 如果陷入无限循环，可以按control+c 或command+c 来结束
 
+这个range（5）呢，实际上在内部构建了一个sequence，从0到5-1=4
+
+```python
+for <variable> in range(<some_num>)：
+    <expression>
+    <expression>
+    ...
+```
+
 ## CONTROL FLOW:for LOOPS
 
 * each time through the loop, <variable> takes a value
@@ -171,13 +180,17 @@ for i in range(5,11,2):
 print(mysum)
 ```
 
+range 里面的数字 必须是int
+
+下面那段 5，7，9  不整11
+
 ## break STATEMENT
+
 * immediately exits whatever loop it is in
 * skips remaining expressions in code block
 * exits only innermost loop!
 
 ![image-20220203144227436](https://raw.githubusercontent.com/lunnche/picgo-image/main/image-20220203144227436.png)
 
-ppt看完了，课还没听完，去听课，再补充
+while 不能改成 for的反例 就是依靠用户输入的那种  你不知道要循环多少次
 
-看到34：15了
