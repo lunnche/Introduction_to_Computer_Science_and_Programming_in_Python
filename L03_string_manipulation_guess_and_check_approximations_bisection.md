@@ -33,8 +33,14 @@ len(s) -> evaluates to 3
 
 ![image-20220203151213452](https://raw.githubusercontent.com/lunnche/picgo-image/main/image-20220203151213452.png)
 
+注意，切片里边是： 不是，
+
+s[::-1] 实际上就是 反转字符串
+
 * string are "immutable"-cannot be modified
 
 ![image-20220203152206695](https://raw.githubusercontent.com/lunnche/picgo-image/main/image-20220203152206695.png)
 
 到silde7 视频L02开始就没看了，补
+
+视频看到p11  10：56
