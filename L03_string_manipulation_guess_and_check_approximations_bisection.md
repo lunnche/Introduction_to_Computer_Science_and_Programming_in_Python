@@ -152,10 +152,35 @@ else:
     print(guess, 'is close to the cube root of',cube)
 ```
 
-加上`guess <= cube'是为了防止出现陷入无限循环的情况，一口没吃到包子馅，下一口过了
+加上`guess <= cube`是为了防止出现陷入无限循环的情况，一口没吃到包子馅，下一口过了
 
 ## 二分搜索
 the larger the space actually is that I need to search the better it is to use bisection search.  
 
 到p11 39：54
+
+* half interval each iteration  
+* new guess is halfway in between
+
+![image-20220212172928082](https://raw.githubusercontent.com/lunnche/picgo-image/main/image-20220212172928082.png)
+
+## bisection search -cube root  
+```python
+cube = 27
+epsilon = 0.01
+num_guessed = 0
+low = 0
+high = cube
+guess = (high + low)/2.0  
+while abs(guess**3 - cube) >= epsilon:
+    if guess**3 < cube :
+        low = guess  
+    else :
+        high = guess
+    guess = (high + low)/2.0
+    num_guesses += 1
+print 'num_guesses =', num_guesses
+print guess, 'is close to the cube root of ',cube
+```
+
 
