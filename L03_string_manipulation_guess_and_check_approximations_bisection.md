@@ -183,4 +183,20 @@ print 'num_guesses =', num_guesses
 print guess, 'is close to the cube root of ',cube
 ```
 
+## bisection search convegence
+* search apces
+    * first guess:  N/2
+    * second guess: N/4
+    * kth guess:    $N/2^k$
+* guess converges on the order of $\log_2 N$ steps
+这步怎么得到的？
+因为最后找到1个数，所以$\frac{N}{2^k}=1$
+所以：$k=\log_2 N$
 
+* bisection search works when value of function varies monotonically with input  
+* code as shown only works for positive `cubes > 1` -why?
+* challenges  modify to work with negative cubes!
+              modify to work with `x<1`!
+              
+             
+完结撒花🌺
